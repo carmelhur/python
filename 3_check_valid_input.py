@@ -1,0 +1,6 @@
+def check_valid_input(letter_guessed, old_letters_guessed):
+    return (
+        len(letter_guessed) == 1 and
+        letter_guessed.isalpha() and
+        letter_guessed.lower() not in [char.lower() for char in old_letters_guessed]
+    )
